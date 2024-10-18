@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api crud 10.09</title>
+    {% load static %}
+</head>
+<body>
+    <h1>items</h1>
+    <ul id="item-list"></ul>
+
+    <h2>add item</h2>
+    <input type="text" id="name" placeholder="Name">
+    <textarea id="description" placeholder="Description"></textarea>
+    <button onclick="addItem()">add</button>
+
+    <script src="{% static 'api/script.js' %}"></script>
+</body>
+</html>
